@@ -83,7 +83,7 @@ async function handleLoadMore() {
     const card = document.querySelector('.gallery-item');
     const height = card.getBoundingClientRect().height;
 
-    window.scrollBy({ top: height * 2.88, behavior: 'smooth' });
+    window.scrollBy({ top: height * 2, behavior: 'smooth' });
     if (page * perPage >= totalHits) {
       hideLoadMoreButton();
       iziToast.info({
